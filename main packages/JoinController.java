@@ -1,3 +1,4 @@
+
 package main;
 
 import java.io.IOException;
@@ -52,3 +53,4 @@ public class JoinController extends HttpServlet {
 		}	   
 	}
 }
+

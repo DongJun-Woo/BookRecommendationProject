@@ -27,17 +27,17 @@
 			</div>
 		</header>
 		<div class="container">
-			<h3>�α���</h3>
+			<h3>로그인</h3>
 			<form name="login" action="index.html" method="POST">
 				<div class="input-box">
-					<input id="username" type="text" name="username" placeholder="���̵�">
-					<label for="username">���̵�</label>
+					<input id="username" type="text" name="username" placeholder="아이디">
+					<label for="username">아이디</label>
 				</div>
 				<div class="input-box">
-					<input id="password" type="password" name="password" placeholder="��й�ȣ">
-					<label for="password">��й�ȣ</label>
+					<input id="password" type="password" name="password" placeholder="비밀번호">
+					<label for="password">비밀번호</label>
 				</div>
-				<input type="submit" value="�α���">
+				<input type="submit" value="로그인">
 			</form>
 		</div>
 		<footer>
@@ -47,9 +47,9 @@
 				</div>
 				<div class="copyright">
 					<p>
-					����� ��Ϲ�ȣ: 1234-1234<br>
-					��ǥ��ȭ:1234-1234<br>
-					��õ������
+					사업자 등록번호: 1234-1234<br>
+					대표전화:1234-1234<br>
+					인천광역시
 					</p>
 				</div>
 				<div class="sns">
@@ -66,4 +66,3 @@
 	<script src="script/index-crawler.js"></script>
 	<script src="script/custom.js"></script>
 </body>
-</html>
