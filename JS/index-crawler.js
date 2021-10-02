@@ -29,23 +29,18 @@ const getNews = () => {
   
         const result = [];
         list_text_inner_arr.forEach((div) => {
-          const aFirst = $(div).find("a").first(); // 첫번째 <a> 태그
-          const path = aFirst.attr("href"); // 첫번째 <a> 태그 url
-          const url = `http://book.interpark.com/display/collectlist.do?_method=bestsellerHourNew&bookblockname=b_gnb&booklinkname=%BA%A3%BD%BA%C6%AE%C1%B8&bid1=w_bgnb&bid2=LiveRanking&bid3=main&bid4=001${path}`; // 도메인을 붙인 url 주소
-          const title = aFirst.text().trim();
-            
-          const img1 = $(div).find("img").first();
-          const imgpath = img1.attr("src");
-          const imgurl = `http://book.interpark.com/display/collectlist.do?_method=bestsellerHourNew&bookblockname=b_gnb&booklinkname=%BA%A3%BD%BA%C6%AE%C1%B8&bid1=w_bgnb&bid2=LiveRanking&bid3=main&bid4=001${path}`;
-          const imgcon = img1.text().trim();
+          const title = $(div).find(".itemName").text().trim();
+          const author = $(div).find(".itemMeta .author").text().trim();
+          const path = $(div).find("a").first().attr("href");
+          // 도메인을 붙인 url 주소
+          const url = `http://book.interpark.com/display/collectlist.do?_method=bestsellerHourNew&bookblockname=b_gnb&booklinkname=%BA%A3%BD%BA%C6%AE%C1%B8&bid1=w_bgnb&bid2=LiveRanking&bid3=main&bid4=001${path}`; 
+          const imgurl = $(div).find("img").first().attr("src");
           
-          const aLast = $(div).find("a").last(); // 두번째 <a>태그
-          const author = aLast.text().trim();
           result.push({
             url,
             title,
             author,
-            imgcon,
+            imgurl,
           });
         });
         console.log(result);
