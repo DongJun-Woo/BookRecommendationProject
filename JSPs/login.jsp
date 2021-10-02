@@ -34,7 +34,7 @@
 		</header>
 		<div class="container">
 			<h3>로그인</h3>
-			<form name="login" action="index.html" method="POST">
+			<form name="login" action="/WEB/login.do" method="GET">
 				<div class="input-box">
 					<input id="username" type="text" name="username" placeholder="아이디">
 					<label for="username">아이디</label>
@@ -46,6 +46,7 @@
 				<input type="submit" value="로그인">
 			</form>
 		</div>
+		</form>
 		<footer>
 			<div class="footer-inner">
 				<div class="footer-logo">

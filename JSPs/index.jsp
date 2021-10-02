@@ -13,6 +13,7 @@
 </head>
 
 <body>
+	<form method="get" action="/WEB/login.do">
 	<div id="wrap">
 		<header>
 			<div class="gnb">
