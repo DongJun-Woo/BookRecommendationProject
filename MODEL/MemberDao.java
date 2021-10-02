@@ -1,4 +1,5 @@
-package com.member;
+package com.member; //eclipse로 실행할 때 제가 임의로 등록한 폴더 명입니다 원하시는대로 바꿔주세요
+		    //같은 폴더에 있어서 MemberVO가 있었습니다
 
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -15,7 +16,7 @@ public class MemberDao {
 	private PreparedStatement pstmt;
 	private ResultSet rs;
 	
-	//DB �׼���
+	//DB 액세스
 	public static synchronized MemberDao getInstance() {
 		if (mDao == null) {
 			mDao = new MemberDao();
@@ -62,7 +63,7 @@ public class MemberDao {
 		}
 	}
 	
-	//ȸ������ �˻�
+	//회원정보 검색
 	public List listmembers(MemberVO mvo) {
 		List<MemberVO> memList = new ArrayList<MemberVO>();
 		String mName = mvo.getName();
@@ -80,7 +81,7 @@ public class MemberDao {
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
 				
-				//rs.getString(�� �ȿ��� db�� ����� �̸�)
+				//rs.getString(이 안에는 db에 등록한 이름)
 				
 				String id = rs.getString("id");
 				String pwd = rs.getString("password");
