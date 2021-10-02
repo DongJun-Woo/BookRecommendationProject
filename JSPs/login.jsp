@@ -15,13 +15,7 @@
 <body>
 	<div id="wrap">
 		<header>
-			<div class="gnb">
-				<div class="gnb-inner">
-					<a href="login.jsp">·Î±×ÀÎ</a>
-					<a href="join.jsp">È¸¿ø°¡ÀÔ</a>
-					<a href="my_page.jsp">¸¶ÀÌÆäÀÌÁö</a>
-				</div>
-			</div>
+			<%@ include file="Top.jsp" %>
 			<div class="logo">
 				<a href="index.jsp">
 					<h2>ThornBooks</h2>
@@ -33,20 +27,19 @@
 			</div>
 		</header>
 		<div class="container">
-			<h3>·Î±×ÀÎ</h3>
-			<form name="login" action="/WEB/login.do" method="GET">
+			<h3>ë¡œê·¸ì¸</h3>
+			<form name="login" action="index.html" method="POST">
 				<div class="input-box">
-					<input id="username" type="text" name="username" placeholder="¾ÆÀÌµð">
-					<label for="username">¾ÆÀÌµð</label>
+					<input id="username" type="text" name="username" placeholder="ì•„ì´ë””">
+					<label for="username">ì•„ì´ë””</label>
 				</div>
 				<div class="input-box">
-					<input id="password" type="password" name="password" placeholder="ºñ¹Ð¹øÈ£">
-					<label for="password">ºñ¹Ð¹øÈ£</label>
+					<input id="password" type="password" name="password" placeholder="ë¹„ë°€ë²ˆí˜¸">
+					<label for="password">ë¹„ë°€ë²ˆí˜¸</label>
 				</div>
-				<input type="submit" value="·Î±×ÀÎ">
+				<input type="submit" value="ë¡œê·¸ì¸">
 			</form>
 		</div>
-		</form>
 		<footer>
 			<div class="footer-inner">
 				<div class="footer-logo">
@@ -54,9 +47,9 @@
 				</div>
 				<div class="copyright">
 					<p>
-					»ç¾÷ÀÚ µî·Ï¹øÈ£: 1234-1234<br>
-					´ëÇ¥ÀüÈ­:1234-1234<br>
-					ÀÎÃµ±¤¿ª½Ã
+					ì‚¬ì—…ìž ë“±ë¡ë²ˆí˜¸: 1234-1234<br>
+					ëŒ€í‘œì „í™”:1234-1234<br>
+					ì¸ì²œê´‘ì—­ì‹œ
 					</p>
 				</div>
 				<div class="sns">
@@ -73,4 +66,3 @@
 	<script src="script/index-crawler.js"></script>
 	<script src="script/custom.js"></script>
 </body>
-</html>

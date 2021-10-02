@@ -1,15 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="ko">
-
+<html>
 <head>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
 	<title>ThornBooks</title>
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/my_page.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/join.css">
 	<link rel="stylesheet" href="css/footer.css">
 </head>
 
@@ -28,21 +27,8 @@
 			</div>
 		</header>
 		<div class="container">
-			<div class="mypage-content">
-				<h2>¸¶ÀÌÆäÀÌÁö</h2>
-				<div class="common-info">
-					<h3>±âº»Á¤º¸</h3>
-					<p>ÀÌ¸§:</p>
-					<hr>
-					<p>¼ºº°:</p>
-				</div>
-				<div class="contact-info">
-					<h3>¿¬¶ôÃ³ Á¤º¸</h3>
-					<p>ÀüÈ­¹øÈ£:</p>
-					<hr>
-					<p>ÀÌ¸ÞÀÏ:</p>
-				</div>
-			</div>
+			<h2>ë¡œê·¸ì¸ì— ì‹¤íŒ¨í•˜ì…¨ìŠµë‹ˆë‹¤</h2>
+			<h2>ì•„ì´ë””ë‚˜ ë¹„ë°€ë²ˆí˜¸ë¥¼ í™•ì¸ í•´ì£¼ì„¸ìš”.</h2>
 		</div>
 		<footer>
 			<div class="footer-inner">
@@ -51,9 +37,9 @@
 				</div>
 				<div class="copyright">
 					<p>
-					»ç¾÷ÀÚ µî·Ï¹øÈ£: 1234-1234<br>
-					´ëÇ¥ÀüÈ­:1234-1234<br>
-					ÀÎÃµ±¤¿ª½Ã
+					ì‚¬ì—…ìž ë“±ë¡ë²ˆí˜¸: 1234-1234<br>
+					ëŒ€í‘œì „í™”:1234-1234<br>
+					ì¸ì²œê´‘ì—­ì‹œ
 					</p>
 				</div>
 				<div class="sns">
@@ -66,6 +52,6 @@
 	</div>
 
 	<script src="script/jquery-3.5.1.min.js"></script>
-	<script src="script/search.js"></script>
+	<script src="script/index-crawler.js"></script>
 	<script src="script/custom.js"></script>
-</body></html>
+</html>

@@ -12,13 +12,6 @@ import javax.servlet.http.HttpSession;
 
 @WebServlet("/login.do")
 public class LoginController extends HttpServlet {
-	
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.doPost(req, resp);
-	}
-
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
@@ -38,12 +31,6 @@ public class LoginController extends HttpServlet {
 
 		}else{
 		      response.sendRedirect("LogError.jsp");
-		}
-		   
-
-		  
+		}		   		  
 	}
-
-
-	
 }
