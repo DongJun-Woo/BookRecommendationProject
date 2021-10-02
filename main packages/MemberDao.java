@@ -68,14 +68,14 @@ public class MemberDao {
         ResultSet rs = null;
         boolean loginCon = false;
         try {
-        	con = this.getConnection();
-            String strQuery = "select userid, userpw from userinfotbl where userid = ? and userpw = ?";
+        	 con = this.getConnection();
+           	 String strQuery = "select userid, userpw from userinfotbl where userid = ? and userpw = ?";
 
-            pstmt = con.prepareStatement(strQuery);
-            pstmt.setString(1, id);
-            pstmt.setString(2, password);
-            rs = pstmt.executeQuery();
-            loginCon = rs.next();
+         	 pstmt = con.prepareStatement(strQuery);
+         	 pstmt.setString(1, id);
+        	 pstmt.setString(2, password);
+       	 	 rs = pstmt.executeQuery();
+       	   	 loginCon = rs.next();
         } catch (Exception ex) {
             System.out.println("Exception" + ex);
         } finally {
@@ -114,6 +114,52 @@ public class MemberDao {
         return flag;
     }	
 	
+  	public List listmembers(MemberDto mDto) {
+  		Connection con = null;
+        PreparedStatement pstmt = null;
+  		List<MemberDto> memList = new ArrayList<MemberDto>();
+  		String mName = mDto.getName();
+  		try {
+  			con = this.getConnection();
+  			String query = "select * from member";
+  			
+  			if((mName != null && mName.length() != 0)) {
+  				query += " where name=?";
+  				pstmt = con.prepareStatement(query);
+                  pstmt.setString(1, mName);
+  			}else {
+  				pstmt = con.prepareStatement(query);
+  			}
+  			ResultSet rs = pstmt.executeQuery();
+  			while(rs.next()) {
+  				
+  				String id = rs.getString("id");
+  				String pwd = rs.getString("password");
+  				String name = rs.getString("name");
+  				String p_num = rs.getString("phonenumber");
+  				String email = rs.getString("mail");
+  				String gender = rs.getString("gender");
+  				String role = rs.getString("role");
+  				
+  				MemberDto dto = new MemberDto();
+  				
+                dto.setId(id);
+                dto.setPassword(pwd);
+                dto.setName(name);
+                dto.setPhonenumber(p_num);
+                dto.setMail(email);
+                dto.setGender(gender);
+                dto.setRole(role);
+                  
+                memList.add(dto);
+  			}
+  		}catch(Exception e) {
+  			e.printStackTrace();
+  		}finally {
+          	this.close(con, pstmt, null);
+          }
+  		return memList;
+  	}
 	
 
 }
