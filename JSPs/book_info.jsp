@@ -14,13 +14,7 @@
 <body>
 	<div id="wrap">
 		<header>
-			<div class="gnb">
-				<div class="gnb-inner">
-					<a href="login.jsp">로그인</a>
-					<a href="join.jsp">회원가입</a>
-					<a href="my_page.jsp">마이페이지</a>
-				</div>
-			</div>
+			<%@ include file="Top.jsp" %>
 			<div class="logo">
 				<a href="index.jsp">
 					<h2>ThornBooks</h2>
