@@ -1,14 +1,14 @@
-package com.member;
+package com.member;		//eclipse로 실행할 때 제가 임의로 등록한 폴더 명입니다 원하시는대로 바꿔주세요
 import java.util.Date;
 
 public class MemberVO {
-	private String id;    	//���̵�
-	private String pwd;		//��й�ȣ
-	private String name;	//�̸�
-	private String p_num;	//��ȭ��ȣ
-	private String email; 	//�̸���
-	private String gender;	//����
-	private Date joinDate;	//���Գ�¥
+	private String id;    	//아이디
+	private String pwd;	//비밀번호
+	private String name;	//이름
+	private String p_num;	//전화번호
+	private String email; 	//이메일
+	private String gender;	//성별
+	private Date joinDate;	//가입날짜
 	
 	public String getId() {
 		return id;
