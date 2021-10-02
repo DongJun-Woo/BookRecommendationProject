@@ -8,7 +8,7 @@
 <style>
 h1{
 	text-alight: center
-	}
+}
 </style>
 <meta charset="utf-8">
 <title>회원 정보 페이지</title>
@@ -40,13 +40,14 @@ h1{
 	//조회하기
 	for(int i = 0; i < memList.size(); i++){
 		MemberVO vo = (MemberVO) memList.get(i);
+		
 		String id = vo.getId();
-        String pwd = vo.getPwd();
-        String name = vo.getName();
-        String p_num = vo.getP_num();
-        String email = vo.getEmail();
-        String gender = vo.getGender();
-        Date joinDate = vo.getJoinDate();
+        	String pwd = vo.getPwd();
+        	String name = vo.getName();
+        	String p_num = vo.getP_num();
+        	String email = vo.getEmail();
+        	String gender = vo.getGender();
+        	Date joinDate = vo.getJoinDate();
 %>
 	
 	<tr align="center">
@@ -57,6 +58,7 @@ h1{
 		<td><%=email%></td>
 		<td><%=gender%></td>
 		<td><%=joinDate%></td>
+		
 <%
 	}
 %>
