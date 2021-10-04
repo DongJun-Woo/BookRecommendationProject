@@ -26,7 +26,7 @@ public class LoginController extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("idKey", id);
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB/index.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 			dispatcher.forward(request, response);
 
 		}else{

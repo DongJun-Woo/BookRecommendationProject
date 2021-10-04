@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -29,18 +29,18 @@
 		</header>
 		<div class="container">
 			<div class="mypage-content">
-				<h2>¸¶ÀÌÆäÀÌÁö</h2>
+				<h2>ë§ˆì´íŽ˜ì´ì§€</h2>
 				<div class="common-info">
-					<h3>±âº»Á¤º¸</h3>
-					<p>ÀÌ¸§:</p>
+					<h3>ê¸°ë³¸ì •ë³´</h3>
+					<p>ì´ë¦„:</p>
 					<hr>
-					<p>¼ºº°:</p>
+					<p>ì„±ë³„:</p>
 				</div>
 				<div class="contact-info">
-					<h3>¿¬¶ôÃ³ Á¤º¸</h3>
-					<p>ÀüÈ­¹øÈ£:</p>
+					<h3>ì—°ë½ì²˜ ì •ë³´</h3>
+					<p>ì „í™”ë²ˆí˜¸:</p>
 					<hr>
-					<p>ÀÌ¸ÞÀÏ:</p>
+					<p>ì´ë©”ì¼:</p>
 				</div>
 			</div>
 		</div>
@@ -51,9 +51,9 @@
 				</div>
 				<div class="copyright">
 					<p>
-					»ç¾÷ÀÚ µî·Ï¹øÈ£: 1234-1234<br>
-					´ëÇ¥ÀüÈ­:1234-1234<br>
-					ÀÎÃµ±¤¿ª½Ã
+					ì‚¬ì—…ìž ë“±ë¡ë²ˆí˜¸: 1234-1234<br>
+					ëŒ€í‘œì „í™”:1234-1234<br>
+					ì¸ì²œê´‘ì—­ì‹œ
 					</p>
 				</div>
 				<div class="sns">
