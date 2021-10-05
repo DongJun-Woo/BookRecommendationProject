@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <head>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -27,26 +27,26 @@
 		</header>
 		<div class="container">
 			<div class="book-info">
-				<h2>Ã¥ Á¤º¸</h2>
+				<h2>ì±… ì •ë³´</h2>
 				<div>
 					<div class="book-img">
 						<img src="images/book4.jpg" alt="">
 					</div>
 					<div class="book-detail">
-						<h1>º½Ã³·³ ³Ê¿¡°Ô °£´Ù</h1>
-						<p>ÀúÀÚ : È«±æµ¿</p>
-						<p>°¡°Ý : 7800¿ø</p>
-						<p>ÁÙ°Å¸® : </p>
+						<h1>ë´„ì²˜ëŸ¼ ë„ˆì—ê²Œ ê°„ë‹¤</h1>
+						<p>ì €ìž : í™ê¸¸ë™</p>
+						<p>ê°€ê²© : 7800ì›</p>
+						<p>ì¤„ê±°ë¦¬ : </p>
 						<span>
-							½ÉÀåÀÇ °íµ¿À» µé¾î º¸¶ó Ã»ÃáÀÇ ÇÇ´Â ²ú´Â´Ù ²ú´Â ÇÇ¿¡ ¶Ù³ë´Â ½ÉÀåÀº °Å¼±ÀÇ ±â°ü°ú °°ÀÌ ÈûÀÖ´Ù ÀÌ°ÍÀÌ´Ù
+							ì‹¬ìž¥ì˜ ê³ ë™ì„ ë“¤ì–´ ë³´ë¼ ì²­ì¶˜ì˜ í”¼ëŠ” ë“ëŠ”ë‹¤ ë“ëŠ” í”¼ì— ë›°ë…¸ëŠ” ì‹¬ìž¥ì€ ê±°ì„ ì˜ ê¸°ê´€ê³¼ ê°™ì´ íž˜ìžˆë‹¤ ì´ê²ƒì´ë‹¤
 <br><br>
-±×·¯¹Ç·Î ±×µéÀº ±æÁö ¾Æ´ÏÇÑ ¸ñ¼ûÀ» »ç´Â°¡ ½ÍÀÌ »ì¾ÒÀ¸¸ç ±×µéÀÇ ±×¸²ÀÚ´Â Ãµ°í¿¡ »ç¶óÁöÁö ¾Ê´Â °ÍÀÌ´Ù ÀÌ°ÍÀº ÇöÀúÇÏ°Ô ÀÏ¿ù°ú °°Àº ¿¹°¡ µÇ·Á´Ï¿Í ±×¿Í °°Áö ¸øÇÏ´Ù ÇÒÁö¶óµµ
+ê·¸ëŸ¬ë¯€ë¡œ ê·¸ë“¤ì€ ê¸¸ì§€ ì•„ë‹ˆí•œ ëª©ìˆ¨ì„ ì‚¬ëŠ”ê°€ ì‹¶ì´ ì‚´ì•˜ìœ¼ë©° ê·¸ë“¤ì˜ ê·¸ë¦¼ìžëŠ” ì²œê³ ì— ì‚¬ë¼ì§€ì§€ ì•ŠëŠ” ê²ƒì´ë‹¤ ì´ê²ƒì€ í˜„ì €í•˜ê²Œ ì¼ì›”ê³¼ ê°™ì€ ì˜ˆê°€ ë˜ë ¤ë‹ˆì™€ ê·¸ì™€ ê°™ì§€ ëª»í•˜ë‹¤ í• ì§€ë¼ë„
 						</span>
 					</div>
 				</div>
 			</div>
 			<div class="bookStore-link">
-				<h3>Ã¥ ±¸¸ÅÇÏ·¯ °¡±â</h3>
+				<h3>ì±… êµ¬ë§¤í•˜ëŸ¬ ê°€ê¸°</h3>
 				<div>
 					<a href="http://www.kyobobook.co.kr/index.laf"><img src="images/kyobo.jpg" alt=""></a>
 					<a href="https://www.aladin.co.kr/home/welcome.aspx"><img src="images/aladin.jpg" alt=""></a>
@@ -61,9 +61,9 @@
 				</div>
 				<div class="copyright">
 					<p>
-					»ç¾÷ÀÚ µî·Ï¹øÈ£: 1234-1234<br>
-					´ëÇ¥ÀüÈ­:1234-1234<br>
-					ÀÎÃµ±¤¿ª½Ã
+					ì‚¬ì—…ìž ë“±ë¡ë²ˆí˜¸: 1234-1234<br>
+					ëŒ€í‘œì „í™”:1234-1234<br>
+					ì¸ì²œê´‘ì—­ì‹œ
 					</p>
 				</div>
 				<div class="sns">

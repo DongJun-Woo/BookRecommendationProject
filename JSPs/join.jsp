@@ -28,37 +28,41 @@
 		</header>
 		<div class="container">
 			<h3>회원가입</h3>
-			<form name="join" action="index.jsp" method="POST">
+			<form name="join" action="register.do" method="GET">
 				<div class="row">
 					<div class="field">
 						<label for="">아이디<em>*</em></label>
-						<input type="text" required>
+						<input type="text" name = "joinid" required>
 					</div>
 					<div class="field">
 						<label for="">비밀번호<em>*</em></label>
-						<input type="password" required>
+						<input type="password" name = "joinpw" required>
 					</div>
 				</div>
 				<div class="row">
 					<div class="field">
 						<label for="">이름<em>*</em></label>
-						<input type="text" required>
+						<input type="text" name = "joinname" required>
 					</div>
 					<div class="field">
 						<label for="">이메일<em>*</em></label>
-						<input type="email" required>
+						<input type="email" name = "joinmail" required>
 					</div>
 				</div>
 				<div class="row">
 					<div class="field">
 						<label for="">전화번호<em>*</em></label>
-						<input type="tel" required id="phoneNum" maxlength="13">
+						<input type="tel" required name="phoneNum" maxlength="13">
 					</div>
 					<div class="field">
 						<label for="">성별<em>*</em></label>
 						<div>
-							<input type="radio" name="gender" value="male" checked>남
-							<input type="radio" name="gender" value="female">여
+							<input type="radio" name="gender" value="남성" checked>남
+							<input type="radio" name="gender" value="여성">여
+						</div>
+						<label>역할<em>*</em></label>
+						<div>
+							<input type="radio" name = "role" value ="일반회원" required checked>일반회원
 						</div>
 					</div>
 				</div>
@@ -85,8 +89,4 @@
 			</div>
 		</footer>
 	</div>
-
-	<script src="script/jquery-3.5.1.min.js"></script>
-	<script src="script/index-crawler.js"></script>
-	<script src="script/custom.js"></script>
 </html>

@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	import="java.util.*"
 	import="main.*"
-    pageEncoding="utf-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,14 +10,14 @@ h1{
 	text-alight: center
 	}
 </style>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <title>회원 정보 페이지</title>
 </head>
 <body>
 	<h1>회원정보 페이지 출력</h1>
 <%
 	//불러오기
-	request.setCharacterEncoding("utf-8");
+	request.setCharacterEncoding("UTF-8");
 	String mName = request.getParameter("name");
 	MemberDto mDto = new MemberDto();
 	mDto.setName(mName);

@@ -7,17 +7,23 @@
 	<meta charset="UTF-8">
 	<title>ThornBooks</title>
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/admin_addNotice.css">
 	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
 	<div id="wrap">
 		<header>
-			<%@ include file="Top.jsp" %>
+			<div class="gnb">
+				<div class="gnb-inner">
+					<a href="login.html">로그인</a>
+					<a href="join.html">회원가입</a>
+					<a href="my_page.html">마이페이지</a>
+				</div>
+			</div>
 			<div class="logo">
-				<a href="index.jsp">
+				<a href="index.html">
 					<h2>ThornBooks</h2>
 				</a>
 			</div>
@@ -27,23 +33,25 @@
 			</div>
 		</header>
 		<div class="container">
-			<h3>로그인</h3>
-			<form name="login" action="login.do" method="GET">
-				<div class="input-box">
-					<input id="username" type="text" name="username" placeholder="아이디">
-					<label for="username">아이디</label>
+			<div class="addNotice-contents">
+				<h2>공지사항 작성</h2>
+				<div class="notice-header">
+					<label for="">제목</label>
+					<input type="text">
 				</div>
-				<div class="input-box">
-					<input id="password" type="password" name="password" placeholder="비밀번호">
-					<label for="password">비밀번호</label>
+				<div class="notice-contents">
+					<label for="">내용</label>
+					<textarea name="" id="" cols="120" rows="15"></textarea>
 				</div>
-				<input type="submit" value="로그인">
-			</form>
+				<div class="submit-btn">
+					<input type="submit">
+				</div>
+			</div>
 		</div>
 		<footer>
 			<div class="footer-inner">
 				<div class="footer-logo">
-					<a href="index.jsp">ThornBooks</a>
+					<a href="index.html">ThornBooks</a>
 				</div>
 				<div class="copyright">
 					<p>
@@ -61,8 +69,6 @@
 		</footer>
 	</div>
 
-
 	<script src="script/jquery-3.5.1.min.js"></script>
-	<script src="script/index-crawler.js"></script>
-	<script src="script/custom.js"></script>
 </body>
+</html>
