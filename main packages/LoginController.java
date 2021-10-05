@@ -17,6 +17,8 @@ public class LoginController extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String id = request.getParameter("username");
 		String pw = request.getParameter("password");
+		//top.jsp ����� ��� �߰�1
+		String role = request.getParameter("role");
 
 		MemberDao mDao = new MemberDao();		
 		boolean loginCheck = mDao.loginCheck(id, pw);
@@ -25,7 +27,8 @@ public class LoginController extends HttpServlet {
 	    	request.setAttribute("loginResult", loginCheck);
 			HttpSession session = request.getSession();
 			session.setAttribute("idKey", id);
-			
+			//top.jsp ����� ��� �߰�2
+			session.setAttribute("roleKey", role);
 			RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 			dispatcher.forward(request, response);
 
