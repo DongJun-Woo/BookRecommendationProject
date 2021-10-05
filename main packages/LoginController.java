@@ -12,18 +12,13 @@ import javax.servlet.http.HttpSession;
 
 @WebServlet("/login.do")
 public class LoginController extends HttpServlet {
-	
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.doPost(req, resp);
-	}
-
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		String id = request.getParameter("username");
 		String pw = request.getParameter("password");
+		//top.jsp 구분을 위한 추가1
+		String role = request.getParameter("role");
 
 		MemberDao mDao = new MemberDao();		
 		boolean loginCheck = mDao.loginCheck(id, pw);
@@ -32,18 +27,13 @@ public class LoginController extends HttpServlet {
 	    	request.setAttribute("loginResult", loginCheck);
 			HttpSession session = request.getSession();
 			session.setAttribute("idKey", id);
-			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB/index.jsp");
+			//top.jsp 구분을 위한 추가2
+			session.setAttribute("roleKey", role);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 			dispatcher.forward(request, response);
 
 		}else{
 		      response.sendRedirect("LogError.jsp");
-		}
-		   
-
-		  
+		}		   		  
 	}
-
-
-	
 }

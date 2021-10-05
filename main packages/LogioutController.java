@@ -17,7 +17,7 @@ public class LogioutController extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.invalidate();
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("step3Model2/Index.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 		dispatcher.forward(request, response);
 		
 
@@ -28,3 +28,5 @@ public class LogioutController extends HttpServlet {
 
 	
 }
+
+

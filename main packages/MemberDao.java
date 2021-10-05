@@ -6,6 +6,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class MemberDao {
@@ -121,7 +123,7 @@ public class MemberDao {
   		String mName = mDto.getName();
   		try {
   			con = this.getConnection();
-  			String query = "select * from member";
+  			String query = "select * from userinfotbl";
   			
   			if((mName != null && mName.length() != 0)) {
   				query += " where name=?";
@@ -133,12 +135,12 @@ public class MemberDao {
   			ResultSet rs = pstmt.executeQuery();
   			while(rs.next()) {
   				
-  				String id = rs.getString("id");
-  				String pwd = rs.getString("password");
-  				String name = rs.getString("name");
-  				String p_num = rs.getString("phonenumber");
-  				String email = rs.getString("mail");
-  				String gender = rs.getString("gender");
+  				String id = rs.getString("userid");
+  				String pwd = rs.getString("userpw");
+  				String name = rs.getString("username");
+  				String p_num = rs.getString("usertel");
+  				String email = rs.getString("useremail");
+  				String gender = rs.getString("usergender");
   				String role = rs.getString("role");
   				
   				MemberDto dto = new MemberDto();
@@ -163,3 +165,4 @@ public class MemberDao {
 	
 
 }
+
