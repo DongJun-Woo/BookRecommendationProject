@@ -8,6 +8,7 @@
 	<title>ThornBooks</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/admin_notice.css">
+	<link rel="stylesheet" href="css/paging.css">
 </head>
 <body>
 	<div id="wrap">
@@ -111,6 +112,7 @@
 		</div>
 		<%@ include file="footer.jsp" %>
 	</div>
-	
+	<script src="script/jquery-3.5.1.min.js"></script>
+	<script src="script/paging_um.js"></script>
 </body>
 </html>

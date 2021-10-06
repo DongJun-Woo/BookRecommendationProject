@@ -7,6 +7,7 @@
 	<title>ThornBooks</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/admin_userManage.css">
+	<link rel="stylesheet" href="css/paging.css">
 </head>
 
 <body>
@@ -136,6 +137,7 @@
 	</div>
 
 	<script src="script/jquery-3.5.1.min.js"></script>
+	<script src="script/paging_um.js"></script>
 	<script src="script/custom.js"></script>
 </body>
 </html>
