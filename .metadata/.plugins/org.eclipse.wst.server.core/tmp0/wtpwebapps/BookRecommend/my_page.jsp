@@ -12,8 +12,6 @@
 	<title>ThornBooks</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/my_page.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -31,15 +29,7 @@
 			</div>
 		</header>
 		<%
-			request.setCharacterEncoding("UTF-8");
-			String mName = request.getParameter("name");
-			MemberDto mDto = new MemberDto();
-			mDto.setName(mName);
-			MemberDao dao = new MemberDao();
-			List memList = dao.listmembers(mDto);
-			
-			String id = "";
-	        String name = "";
+		//앞부분은 Top.jsp에서 선언한다
 	        String p_num = "";
 	        String email = "";
 	        String gender = "";
