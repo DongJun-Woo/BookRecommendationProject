@@ -31,7 +31,7 @@
 					<div class="userInfoTable">
 						<ul class="userInfo">
 							<li>게시물 번호</li>
-							<li><a href="notice.html">제목</a></li>
+							<li>제목</li>
 							<li>작성자</li>
 							<li>날짜</li>
 							<li>조회수</li>
@@ -42,7 +42,7 @@
 						</ul>
 						<ul class="userInfo">
 							<li>게시물 번호</li>
-							<li><a href="notice.html">제목</a></li>
+							<li>제목</li>
 							<li>작성자</li>
 							<li>날짜</li>
 							<li>조회수</li>
@@ -53,7 +53,7 @@
 						</ul>
 						<ul class="userInfo">
 							<li>게시물 번호</li>
-							<li><a href="notice.html">제목</a></li>
+							<li>제목</li>
 							<li>작성자</li>
 							<li>날짜</li>
 							<li>조회수</li>
@@ -64,7 +64,7 @@
 						</ul>
 						<ul class="userInfo">
 							<li>게시물 번호</li>
-							<li><a href="notice.html">제목</a></li>
+							<li>제목</li>
 							<li>작성자</li>
 							<li>날짜</li>
 							<li>조회수</li>
@@ -75,7 +75,7 @@
 						</ul>
 						<ul class="userInfo">
 							<li>게시물 번호</li>
-							<li><a href="notice.html">제목</a></li>
+							<li>제목</li>
 							<li>작성자</li>
 							<li>날짜</li>
 							<li>조회수</li>
@@ -86,7 +86,7 @@
 						</ul>
 						<ul class="userInfo">
 							<li>게시물 번호</li>
-							<li><a href="notice.html">제목</a></li>
+							<li>제목</li>
 							<li>작성자</li>
 							<li>날짜</li>
 							<li>조회수</li>
@@ -97,7 +97,7 @@
 						</ul>
 						<ul class="userInfo">
 							<li>게시물 번호</li>
-							<li><a href="notice.html">제목</a></li>
+							<li>제목</li>
 							<li>작성자</li>
 							<li>날짜</li>
 							<li>조회수</li>

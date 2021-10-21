@@ -42,7 +42,10 @@
 	display: flex;
 	border-bottom: 1px solid #aaa;
 }
-.userInfo:nth-of-type(3n){
+.userInfo:nth-of-type(5n){
+	border-bottom: 1px solid #555;
+}
+.userInfo:last-of-type{
 	border-bottom: none;
 }
 .userInfo li{
@@ -53,7 +56,7 @@
 .userInfo li:nth-of-type(2){
 	flex: 4;
 }
-.userInfo li:nth-of-type(6n-5){
+.userInfo li:nth-last-of-type(6n){
 	font-weight: bold;
 }
 

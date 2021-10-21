@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	import="java.util.*"
-	import="com.shop.user.*"
-	import="com.shop.user.Impl.*"
+	import="com.shop.user.MemberDto"
+	import="com.shop.user.Impl.MemberDao"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
@@ -12,6 +12,8 @@
 	<title>ThornBooks</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/my_page.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -29,23 +31,15 @@
 			</div>
 		</header>
 		<%
-		//앞부분은 Top.jsp에서 선언한다
-	        String p_num = "";
-	        String email = "";
-	        String gender = "";
-	        
-			for(int i = 0; i < memList.size(); i++){
-				MemberDto dto = (MemberDto) memList.get(i);
-				id = dto.getId();
-		        name = dto.getName();
-		        p_num = dto.getPhonenumber();
-		        email = dto.getMail();
-		        gender = dto.getGender();
-		        //동명 이인이 있을 경우가 있기때문에 if문 사용
-		        if(id.equals(mem_id)){
-		        	break;
-		        }
-		    }
+			request.setCharacterEncoding("UTF-8");
+			MemberDao mDao = new MemberDao();
+			MemberDto mDto = new MemberDto();
+			mDto = mDao.getUserInfo(mem_id);
+			
+			String name = mDto.getName();
+			String gender = mDto.getGender();
+			String p_num = mDto.getPhonenumber();
+			String email = mDto.getMail();
 		%>
 		
 		<div class="container">
@@ -63,6 +57,7 @@
 					<hr>
 					<p>이메일: <%=email%></p>
 				</div>
+				<input type="submit" value="수정" onClick = "location.href = 'my_page_update.jsp'">
 			</div>
 		</div>
 		<footer>
@@ -89,4 +84,5 @@
 	<script src="script/jquery-3.5.1.min.js"></script>
 	<script src="script/search.js"></script>
 	<script src="script/custom.js"></script>
-</body></html>
+</body>
+</html>
