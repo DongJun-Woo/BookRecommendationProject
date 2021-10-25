@@ -9,21 +9,21 @@ import com.shop.common.*;
 
 import com.shop.board.BoardVO;
 public class BoardDAO {
-	// JDBC ∞¸∑√ ∫Øºˆ
+	// JDBC Í¥ÄÎ†® Î≥ÄÏàò
 	private Connection conn = null;
 	private PreparedStatement stmt = null;
 	private ResultSet rs = null;
-	// SQL ∏Ì∑…æÓµÈ
+	// SQL Î™ÖÎ†πÏñ¥Îì§
 	private final String BOARD_INSERT = "insert into BoardTable (BoardTitle, BoardContent, BoardAuthor) values(?,?,?)";
 	private final String BOARD_UPDATE = "update BoardTable set BoardTitle=?, BoardContent=? where BoardId=?";
 	private final String BOARD_DELETE = "delete BoardTable where BoardId=?";
 	private final String BOARD_GET = "select * from BoardTable where BoardId=?";
 	private final String BOARD_LIST = "select * from BoardTable order by BoardId desc";
 
-	// CRUD ±‚¥…¿« ∏ﬁº“µÂ ±∏«ˆ
-	// ±€ µÓ∑œ
+	// CRUD Í∏∞Îä•Ïùò Î©îÏÜåÎìú Íµ¨ÌòÑ
+	// Í∏Ä Îì±Î°ù
 	public void insertBoard(BoardVO vo) {
-		System.out.println("===> JDBC∑Œ insertBoard() ±‚¥… √≥∏Æ");
+		System.out.println("===> JDBCÎ°ú insertBoard() Í∏∞Îä• Ï≤òÎ¶¨");
 		try {
 			conn = JDBCConnection.getConnection();
 			stmt = conn.prepareStatement(BOARD_INSERT);
@@ -38,9 +38,9 @@ public class BoardDAO {
 		}
 	}
 
-	// ±€ ºˆ¡§
+	// Í∏Ä ÏàòÏ†ï
 	public void updateBoard(BoardVO vo) {
-		System.out.println("===> JDBC∑Œ updateBoard() ±‚¥… √≥∏Æ");
+		System.out.println("===> JDBCÎ°ú updateBoard() Í∏∞Îä• Ï≤òÎ¶¨");
 		try {
 			conn = JDBCConnection.getConnection();
 			stmt = conn.prepareStatement(BOARD_UPDATE);
@@ -55,9 +55,9 @@ public class BoardDAO {
 		}
 	}
 
-	// ±€ ªË¡¶
+	// Í∏Ä ÏÇ≠Ï†ú
 	public void deleteBoard(BoardVO vo) {
-		System.out.println("===> JDBC∑Œ deleteBoard() ±‚¥… √≥∏Æ");
+		System.out.println("===> JDBCÎ°ú deleteBoard() Í∏∞Îä• Ï≤òÎ¶¨");
 		try {
 			conn = JDBCConnection.getConnection();
 			stmt = conn.prepareStatement(BOARD_DELETE);
@@ -70,9 +70,9 @@ public class BoardDAO {
 		}
 	}
 
-	// ±€ ªÛºº ¡∂»∏
+	// Í∏Ä ÏÉÅÏÑ∏ Ï°∞Ìöå
 	public BoardVO getBoard(BoardVO vo) {
-		System.out.println("===> JDBC∑Œ getBoard() ±‚¥… √≥∏Æ");
+		System.out.println("===> JDBCÎ°ú getBoard() Í∏∞Îä• Ï≤òÎ¶¨");
 		BoardVO board = null;
 		try {
 			conn = JDBCConnection.getConnection();
@@ -96,11 +96,11 @@ public class BoardDAO {
 		return board;
 	}
 
-	// ±€ ∏Ò∑œ ¡∂»∏
+	// Í∏Ä Î™©Î°ù Ï°∞Ìöå
 	// 	private final String BOARD_LIST = "select * from board order by seq desc";
 	
 	public List<BoardVO> getBoardList(BoardVO vo) {
-		System.out.println("===> JDBC∑Œ getBoardList() ±‚¥… √≥∏Æ");
+		System.out.println("===> JDBCÎ°ú getBoardList() Í∏∞Îä• Ï≤òÎ¶¨");
 		List<BoardVO> boardList = new ArrayList<BoardVO>();
 		try {
 			conn = JDBCConnection.getConnection();

@@ -87,5 +87,5 @@
 	</div>
 
 	<script src="script/jquery-3.5.1.min.js"></script>
-	<script type="text/javascript"><%@include file="script/index_crawler.js"%></script>
+	<script src="script/bundle4.js"></script>
 </html>
